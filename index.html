@@ -47,6 +47,7 @@ header p{font-size:12px;color:var(--ink2);margin-top:3px}
 .tip{background:var(--card);border-radius:14px;padding:12px 14px;font-size:12px;color:var(--ink2);
   line-height:1.7;margin-top:16px;box-shadow:var(--shadow)}
 .tip b{color:var(--ink)}
+.copyright{margin-top:24px;padding:14px 8px 4px;text-align:center;font-size:11px;line-height:1.7;color:var(--ink2);opacity:.75}
 
 /* ---------- 练习页 ---------- */
 #ex{display:none}
@@ -520,6 +521,8 @@ header p{font-size:12px;color:var(--ink2);margin-top:3px}
         <div class="stars"></div>
       </div>
     </div>
+
+    <div class="copyright">© 2026 QuietNorth · 音乐速查工具<br>仅供个人学习与教学使用 · 未经许可禁止商用</div>
 
   </div>
 
@@ -2988,7 +2991,7 @@ window.naPluckChord = function (midis, vel, dur, strum) {
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     window.addEventListener('load', function () {
       /* 注册 URL 带缓存版本号：版本更新后 URL 变化，浏览器强制重新安装新 SW（绕过 HTTP 缓存） */
-      navigator.serviceWorker.register('sw.js?v=music-v22' + (sc ? '&sharecode=' + encodeURIComponent(sc) : '')).catch(function () {});
+      navigator.serviceWorker.register('sw.js?v=music-v23' + (sc ? '&sharecode=' + encodeURIComponent(sc) : '')).catch(function () {});
     });
   }
 })();
