@@ -1,6 +1,6 @@
 /* 级数和弦速查 · 离线缓存
    线上静态资源需携带 sharecode，故从 SW 自身 URL 中提取并拼接到预缓存地址 */
-var CACHE = 'music-v22';
+var CACHE = 'music-v23';
 var SC = '';
 try { SC = new URL(self.location.href).searchParams.get('sharecode') || ''; } catch (e) {}
 var SUF = SC ? ('?sharecode=' + encodeURIComponent(SC)) : '';
